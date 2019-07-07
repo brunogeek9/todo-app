@@ -1,5 +1,5 @@
  <template>
-  <div>
+  <div class="todo-app">
       <input type="text" class="todo-input" placeholder="o que precisa ser feito ?"
       v-model="newTodo" @keyup.enter="addTodo">
       <!-- lista de coisas para fazer -->
@@ -40,7 +40,6 @@
     </div>
 </div>
         
-  </div>
 </template>
 
 <script>
@@ -126,7 +125,7 @@ export default {
 </script>
 
 <style lang="scss">
-      @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
   .todo-input {
     width: 100%;
     padding: 10px 18px;
@@ -183,6 +182,11 @@ export default {
     border-top: 1px solid lightgrey;
     padding-top: 14px;
     margin-bottom: 14px;
+  }
+  .todo-app{
+    width: 50%;
+    height: 70%;
+    margin: auto;
   }
   button {
     font-size: 14px;

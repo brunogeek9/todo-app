@@ -35,11 +35,7 @@
         <button :class="{ active: filter == 'completed' }" @click="filter = 'completed'">Completed</button>
       </div>
 
-      <!-- <div>
-        <transition name="fade">
-        <button v-if="showClearButton" @click="clearCompleted">Clear Completed</button>
-        </transition>
-      </div> -->
+      
     
     </div>
 </div>
@@ -48,7 +44,6 @@
 </template>
 
 <script>
-import { resolve } from 'dns';
 export default {
   name: 'Todo List',
   data(){
